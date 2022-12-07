@@ -12,7 +12,7 @@ const db = getFirestore();
 // i used core because my server ans client are in different ports.
 const io = require('socket.io')(3001, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://client-code.onrender.com',
         methods: ["GET", "POST"],
     },
 })
